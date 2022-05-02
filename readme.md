@@ -137,49 +137,12 @@ print("응답 데이터: {}".format(r.text))
 ```
 ## 6. 실행결과
 **6-1. server.py**
-```
-127.0.0.1:8080 에서 서버 작동중.....
-127.0.0.1 - - [02/May/2022 14:10:55] GET 요청을 처리합니다
-127.0.0.1 - - [02/May/2022 14:10:55] "GET /?name=junhyung HTTP/1.1" 200 -
-127.0.0.1 - - [02/May/2022 14:10:55] POST 요청을 처리합니다.
-127.0.0.1 - - [02/May/2022 14:10:55] "POST /?name=sangki&last_name=oh HTTP/1.1" 200 -
-127.0.0.1 - - [02/May/2022 14:10:55] POST 요청을 처리합니다.
-127.0.0.1 - - [02/May/2022 14:10:55] "POST /?name=keunho&last_name=byun HTTP/1.1" 200 -
-127.0.0.1 - - [02/May/2022 14:10:55] DELETE 요청을 처리합니다.
-127.0.0.1 - - [02/May/2022 14:10:55] "DELETE /?name=sangki HTTP/1.1" 200 -
-127.0.0.1 - - [02/May/2022 14:10:55] 삭제 완료
-127.0.0.1 - - [02/May/2022 14:10:55] GET 요청을 처리합니다
-127.0.0.1 - - [02/May/2022 14:10:55] "GET /?name=sangki HTTP/1.1" 404 -
-127.0.0.1 - - [02/May/2022 14:10:55] 이름을 찾을 수 없습니다.
-```
+![client](https://user-images.githubusercontent.com/62899939/166221875-44a01fee-2fa2-4560-8fc5-f99a12fe5bd4.png)
+
 
 **6-2. client.py**
-```
-// GET junhyung
-요청 메소드: GET
-응답코드: 200
-응답 데이터: bae
+![server](https://user-images.githubusercontent.com/62899939/166221907-0ab39d2c-0d78-4abe-9664-0fe3ca24c51e.png)
 
-// PUT sangki oh
-요청 메소드: POST
-응답코드: 200
-응답 데이터: {'junhyung': 'bae', 'hojung': 'jeong', 'sangki': 'oh'}
-
-// PUT keunho byun
-요청 메소드: POST
-응답코드: 200
-응답 데이터: {'junhyung': 'bae', 'hojung': 'jeong', 'keunho': 'byun', 'sangki': 'oh'}
-
-// DELETE sangki
-요청 메소드: DELETE
-응답코드: 200
-응답 데이터: deleted complete, current dict: {'junhyung': 'bae', 'hojung': 'jeong', 'keunho': 'byun'}
-
-// GET sangki, 위에서 DELETE 했으므로 404 오류 발생
-요청 메소드: GET
-응답코드: 404
-응답 데이터: Can not find name.
-```
 
 **6-3. wireshark 패킷 트래킹**
 
