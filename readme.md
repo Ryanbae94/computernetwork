@@ -138,12 +138,12 @@ print("응답 데이터: {}".format(r.text))
 ## 6. 실행결과
 **6-1. server.py**
 
-![client](https://user-images.githubusercontent.com/62899939/166221875-44a01fee-2fa2-4560-8fc5-f99a12fe5bd4.png)
+![server](https://user-images.githubusercontent.com/62899939/166221907-0ab39d2c-0d78-4abe-9664-0fe3ca24c51e.png)
 
 
 **6-2. client.py**
 
-![server](https://user-images.githubusercontent.com/62899939/166221907-0ab39d2c-0d78-4abe-9664-0fe3ca24c51e.png)
+![client](https://user-images.githubusercontent.com/62899939/166221875-44a01fee-2fa2-4560-8fc5-f99a12fe5bd4.png)
 
 
 **6-3. wireshark 패킷 트래킹**
